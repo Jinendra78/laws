@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Free Legal Help — Prototype</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Free Legal Help</h1>
+    <p>Describe your legal problem in simple words. (e.g., "my landlord won't return deposit")</p>
+    <div class="search-box">
+      <input id="query" placeholder="Type your problem..." />
+      <select id="lang">
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="mr">Marathi</option>
+      </select>
+      <button id="searchBtn">Search</button>
+    </div>
+    <div id="results"></div>
+    <hr>
+    <p>Admin: <a href="/admin">Open Admin</a></p>
+  </div>
+  <script src="/main.js"></script>
+</body>
+</html>

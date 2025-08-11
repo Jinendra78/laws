@@ -1,0 +1,6 @@
+body{font-family:Arial,Helvetica,sans-serif;background:#f7f7f8;color:#222;margin:0;padding:0}
+.container{max-width:820px;margin:40px auto;padding:20px;background:white;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.search-box{display:flex;gap:8px;margin:12px 0}
+input,select,textarea{padding:10px;border:1px solid #ddd;border-radius:6px}
+button{padding:10px 14px;border-radius:6px;border:none;background:#2b6cff;color:white;cursor:pointer}
+#results .card{border:1px solid #eee;padding:12px;border-radius:6px;margin-bottom:10px}

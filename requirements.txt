@@ -1,0 +1,9 @@
+Flask==2.2.5
+SQLAlchemy==1.4.56
+sklearn==0.0
+scikit-learn
+numpy
+requests
+python-dotenv
+
+reportlab

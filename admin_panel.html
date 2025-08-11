@@ -1,0 +1,27 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Admin Panel</title><link rel="stylesheet" href="/styles.css"></head>
+<body>
+<div class="container">
+<h2>Admin Panel</h2>
+<form id="addForm">
+  <input name="password" type="hidden" value="admin123" />
+  <input name="title" placeholder="Title" /><br/>
+  <input name="section" placeholder="Section" /><br/>
+  <input name="act" placeholder="Act" /><br/>
+  <textarea name="summary_en" placeholder="Summary (English)"></textarea><br/>
+  <button type="submit">Add Law</button>
+</form>
+<p><a href="/">Back to site</a></p>
+<script>
+document.getElementById('addForm').addEventListener('submit', async (e)=>{
+  e.preventDefault();
+  const fd = new FormData(e.target);
+  const obj = Object.fromEntries(fd.entries());
+  const res = await fetch('/admin/add', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(obj)});
+  const j = await res.json();
+  if(j.ok) alert('Added law id '+j.id);
+  else alert(JSON.stringify(j));
+});
+</script>
+</div>
+</body></html>
